@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "Users", type: :request do
   before do
-    @user = FactoryBot.create(:user, name: "egipt", email: "egipt@egipt.com")
-    @other_user = FactoryBot.create(:user, name: "sweden", email: "sweden@sweden.com")
+    @user = FactoryBot.create(:user, name: "egipt",user_name: "egipt_cairo", email: "egipt@egipt.com")
+    @other_user = FactoryBot.create(:user, name: "sweden", user_name: "sweden_stockholm",email: "sweden@sweden.com")
   end
   describe "GET #show" do
     it "リクエストが成功する" do

@@ -1,7 +1,8 @@
 FactoryBot.define do
   factory :user do
-    name { "MyString" }
-    email { "MyString" }
+    name { "name" }
+    email { "mail" }
+    user_name { "user_name"}
     password { "password"}
     trait :invalid do
       name nil
